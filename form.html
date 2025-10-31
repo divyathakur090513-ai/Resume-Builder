@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Resume Builder — Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+<h2>Resume Builder</h2>
+<nav> <a href="index.html">Logout</a> </nav>
+</header>
+
+
+<main class="container">
+<section class="card">
+<h3>Personal & Contact</h3>
+<div class="form-grid">
+<label>Full Name <input id="fullName" placeholder="First Last"></label>
+<label>Email <input id="userEmail" placeholder="you@example.com"></label>
+<label>Phone <input id="phone" placeholder="+91 91234 56789"></label>
+<label>Location <input id="location" placeholder="City, Country"></label>
+</div>
+</section>
+
+
+<section class="card">
+<h3>Education</h3>
+<div id="educationList" class="list-block">
+<!-- one education item inserted by default -->
+</div>
+<button id="addEducation" class="btn">Add Education</button>
+</section>
+
+
+<section class="card">
+<h3>Experience</h3>
+<div id="experienceList" class="list-block"></div>
+<button id="addExperience" class="btn">Add Experience</button>
+</section>
+
+
+<section class="card">
+<h3>Skills & Projects</h3>
+<label>Skills (comma separated)
+<input id="skills" placeholder="JavaScript, C, HTML">
+</label>
+<label>Projects (one per line)
+<textarea id="projects" rows="4" placeholder="Project 1 - short desc\nProject 2 - short desc"></textarea>
+</label>
+</section>
+
+
+<section class="card">
+<h3>Extras</h3>
+<label>Certifications / Achievements
+<textarea id="extras" rows="3"></textarea>
+</label>
+
+
+<div class="row">
+<input id="linkedinUrl" placeholder="Paste LinkedIn profile URL (simulated)" />
+<button id="autoFillLinkedIn" class="btn">Auto-fill from LinkedIn</button>
+</div>
+
+
+<div class="row" style="margin-top:12px;">
+<button id="previewBtn" class="btn primary">Next: Choose Template</button>
+</div>
+</section>
+</main>
+
+
+<script src="form.js"></script>
+</body>
+</html>
